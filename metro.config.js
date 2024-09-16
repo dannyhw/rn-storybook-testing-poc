@@ -8,4 +8,8 @@ const withStorybook = require("@storybook/react-native/metro/withStorybook");
 module.exports = withStorybook(defaultConfig, {
   enabled: true,
   configPath: path.resolve(__dirname, "./.ondevice"),
+  // websocket: {
+  //   host: "localhost",
+  //   port: 7007,
+  // },
 });

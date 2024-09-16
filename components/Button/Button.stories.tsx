@@ -7,9 +7,7 @@ import { MyButton } from "./Button";
 const meta = {
   title: "MyButton",
   component: MyButton,
-  args: {
-    text: "Hello world",
-  },
+  args: {},
   decorators: [
     (Story) => (
       <View style={{ padding: 16 }}>
@@ -26,6 +24,7 @@ type Story = StoryObj<typeof meta>;
 export const Basic: Story = {
   args: {
     onPress: action("onPress"),
+    text: "Hello World",
   },
 };
 

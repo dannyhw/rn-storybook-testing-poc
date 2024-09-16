@@ -8,10 +8,11 @@ const StorybookUIRoot = view.getStorybookUI({
     setItem: AsyncStorage.setItem,
   },
   onDeviceUI: false,
+  enableWebsockets: true,
 });
 
 export default () => (
-  <SafeAreaView style={{ flex: 1 }}>
+  <SafeAreaView style={{ flex: 1 }} testID="storybook-ui">
     <StorybookUIRoot />
   </SafeAreaView>
 );

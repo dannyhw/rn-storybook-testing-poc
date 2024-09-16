@@ -10,12 +10,12 @@ module.exports = {
       _: ["e2e"],
     },
   },
-  artifacts: {
-    plugins: {
-      log: process.env.CI ? "failing" : undefined,
-      screenshot: "failing",
-    },
-  },
+  // artifacts: {
+  //   plugins: {
+  //     log: process.env.CI ? "failing" : undefined,
+  //     screenshot: "failing",
+  //   },
+  // },
   apps: {
     "ios.debug": {
       type: "ios.app",
