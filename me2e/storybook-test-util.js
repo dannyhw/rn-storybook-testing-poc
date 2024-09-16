@@ -53,30 +53,15 @@ export async function GoThroughAllStories() {
     }).parse();
   });
 
+  const storyMap = {};
   for await (const { meta, stories } of csfStories) {
     if (meta.title) {
-      for await (const { name: storyName } of stories) {
-        console.log("story", meta.title, storyName);
-
-        const storyId = toId(meta.title, storyName);
-
-        const doit = () =>
-          new Promise((resolve) => {
-            setTimeout(() => {
-              console.log("emitting story", storyId, meta.title, storyName);
-              // channel.emit(Events.SET_CURRENT_STORY, { storyId });
-
-              // delay 500ms
-              setTimeout(async () => {
-                console.log(`${meta.title}-${storyName}`);
-                // await takeScreenshot(`${meta.title}-${storyName}`);
-                resolve(true);
-              }, 0 /* 1000 */);
-            }, 0 /* 1000 */);
-          });
-
-        await doit();
-      }
+      storyMap[meta.title] = stories.map((story) => ({
+        id: toId(meta.title, story.name),
+        filename: `${meta.title}-${story.name}`,
+      }));
     }
   }
+
+  return storyMap;
 }
