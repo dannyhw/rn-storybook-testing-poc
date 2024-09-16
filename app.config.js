@@ -1,7 +1,7 @@
 export default ({ config }) => ({
   ...config,
-  name: "Owl Storybook",
-  slug: "owl-storybook",
+  name: "Detox Storybook",
+  slug: "detox-storybook",
   version: "1.0.0",
   orientation: "portrait",
   icon: "./assets/icon.png",
@@ -22,14 +22,14 @@ export default ({ config }) => ({
   assetBundlePatterns: ["**/*"],
   ios: {
     supportsTablet: true,
-    bundleIdentifier: "com.dannyhw.owlstorybook",
+    bundleIdentifier: "com.dannyhw.detoxstorybook",
   },
   android: {
     adaptiveIcon: {
       foregroundImage: "./assets/adaptive-icon.png",
       backgroundColor: "#FFFFFF",
     },
-    package: "com.dannyhw.owlstorybook",
+    package: "com.dannyhw.detoxstorybook",
   },
   web: {
     favicon: "./assets/favicon.png",

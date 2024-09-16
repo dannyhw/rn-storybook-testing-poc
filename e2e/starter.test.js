@@ -1,4 +1,4 @@
-import { GoThroughAllStories } from "../me2e/storybook-test-util.js";
+import { GoThroughAllStories } from "./storybook-test-util.js";
 
 GoThroughAllStories().then((out) => console.log(JSON.stringify(out, null, 2)));
 

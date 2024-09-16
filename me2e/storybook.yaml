@@ -1,6 +1,0 @@
-appId: com.dannyhw.owlstorybook
----
-- launchApp
-- assertVisible: "Hello world"
-- runScript:
-    file: storybook-test-util.js

@@ -20,16 +20,16 @@ module.exports = {
     "ios.debug": {
       type: "ios.app",
       binaryPath:
-        "ios/build/Build/Products/Debug-iphonesimulator/OwlStorybook.app",
+        "ios/build/Build/Products/Debug-iphonesimulator/DetoxStorybook.app",
       build:
-        "xcodebuild -workspace ios/OwlStorybook.xcworkspace -scheme OwlStorybook -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
+        "xcodebuild -workspace ios/DetoxStorybook.xcworkspace -scheme DetoxStorybook -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
     },
     "ios.release": {
       type: "ios.app",
       binaryPath:
-        "ios/build/Build/Products/Release-iphonesimulator/OwlStorybook.app",
+        "ios/build/Build/Products/Release-iphonesimulator/DetoxStorybook.app",
       build:
-        "xcodebuild -workspace ios/OwlStorybook.xcworkspace -scheme OwlStorybook -configuration Release -sdk iphonesimulator -derivedDataPath ios/build",
+        "xcodebuild -workspace ios/DetoxStorybook.xcworkspace -scheme DetoxStorybook -configuration Release -sdk iphonesimulator -derivedDataPath ios/build",
     },
     "android.debug": {
       type: "android.apk",
