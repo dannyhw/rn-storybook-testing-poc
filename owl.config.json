@@ -1,0 +1,11 @@
+{
+  "ios": {
+    "workspace": "ios/OwlStorybook.xcworkspace",
+    "scheme": "OwlStorybook",
+    "configuration": "Release",
+    "device": "iPhone 15"
+  },
+  "android": {
+    "packageName": "com.dannyhw.owlstorybook"
+  }
+}

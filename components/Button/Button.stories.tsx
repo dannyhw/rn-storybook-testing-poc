@@ -28,3 +28,10 @@ export const Basic: Story = {
     onPress: action("onPress"),
   },
 };
+
+export const Other: Story = {
+  args: {
+    text: "other",
+    onPress: action("onPress"),
+  },
+};
